@@ -1,4 +1,5 @@
-*/.DS_Store
-*.DS_Store
 [Pp]lugged
 [Aa]utoload
+
+*.DS_Store
+.netrwhist
