@@ -27,7 +27,6 @@ augroup vim-cmake-group
   autocmd! User CMakeBuildSucceeded CMakeClose
 augroup END
 
-
 highlight ExtraWhitespace ctermbg=red guibg=red
 match ExtraWhitespace /\s\+$/
 au BufWinEnter * match ExtraWhitespace /\s\+$/

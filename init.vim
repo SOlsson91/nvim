@@ -126,6 +126,8 @@ map <leader>ev :vsp %%
 map <leader>et :tabe %%
 
 nmap <silent> <leader>/ :nohlsearch<CR>
+
+"nmap <silent> <leader>
 " Yank to end of line from current position
 nnoremap Y y$
 
@@ -152,14 +154,7 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-" Always show the signcolumn, otherwise it would shift the text each time
-" diagnostics appear/become resolved.
-if has("patch-8.1.1564")
-  " Recently vim can merge signcolumn and number column into one
-  set signcolumn=number
-else
-  set signcolumn=yes
-endif
+set signcolumn=auto
 
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 
@@ -172,11 +167,7 @@ function! s:show_documentation()
 endfunction
 
 " Use <c-space> to trigger completion.
-if has('nvim')
-  inoremap <silent><expr> <c-space> coc#refresh()
-else
-  inoremap <silent><expr> <c-@> coc#refresh()
-endif
+inoremap <silent><expr> <c-space> coc#refresh()
 
 " GoTo code navigation.
 nmap <leader>gd <Plug>(coc-definition)

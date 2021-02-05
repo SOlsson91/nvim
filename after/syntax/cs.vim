@@ -18,17 +18,11 @@ let g:omnicomplete_fetch_full_documentation = 1
 let g:OmniSharp_server_use_mono = 1
 let g:OmniSharp_selector_ui = 'fzf'
 
-if has('patch-8.1.1880')
-  set completeopt=longest,menuone,popuphidden
+"set completeopt=longest,menuone,popuphidden
   " Highlight the completion documentation popup background/foreground the same as
   " the completion menu itself, for better readability with highlighted
   " documentation.
-  set completepopup=highlight:Pmenu,border:off
-else
-  set completeopt=longest,menuone,preview
-  " Set desired preview window height for viewing documentation.
-  set previewheight=5
-endif
+"set completepopup=highlight:Pmenu,border:off
 
 nnoremap <silent> <leader>gd :OmniSharpGotoDefinition<CR>
 nnoremap <silent> <leader>od :OmniSharpDocumentation<CR>
