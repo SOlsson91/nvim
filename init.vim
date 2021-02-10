@@ -75,6 +75,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'cdelledonne/vim-cmake'
 Plug 'morhetz/gruvbox'
+
+Plug 'cespare/vim-toml'
 call plug#end()
 
 "set termguicolors " Not working with floatterm for some reason
