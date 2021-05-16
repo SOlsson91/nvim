@@ -10,10 +10,8 @@
 " ----------------------------------
 " C++ Specific
 " ----------------------------------
-" Switch between header/source with F4
-map <F4> :e %:p:s,.h$,.X123X,:s,.cpp$,.h,:s,.X123X$,.cpp,<CR>
-
-nnoremap <F7> :make!<cr>
+"
+nmap <leader>ko :CocCommand clangd.switchSourceHeader<cr>
 
 nmap <leader>cg :CMakeGenerate<cr>
 nmap <leader>cb :CMakeBuild<cr>
