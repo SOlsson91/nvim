@@ -67,7 +67,7 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'mbbill/undotree'
 
 Plug 'OmniSharp/omnisharp-vim'
-Plug 'dense-analysis/ale'
+"Plug 'dense-analysis/ale'
 
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -104,7 +104,7 @@ let g:lightline = {
 set noshowmode
 
 " Tell ALE to use OmniSharp for linting C# files, and no other linters.
-let g:ale_linters = { 'cs': ['OmniSharp'] }
+"let g:ale_linters = { 'cs': ['OmniSharp'] }
 
 " ----------------------------------
 " Keybindings

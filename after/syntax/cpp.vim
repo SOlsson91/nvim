@@ -11,7 +11,8 @@
 " C++ Specific
 " ----------------------------------
 "
-nmap <leader>ko :CocCommand clangd.switchSourceHeader<cr>
+"nmap <leader>ko :CocCommand clangd.switchSourceHeader<cr>
+nmap <A-o> :CocCommand clangd.switchSourceHeader<cr>
 
 nmap <leader>cg :CMakeGenerate<cr>
 nmap <leader>cb :CMakeBuild<cr>
