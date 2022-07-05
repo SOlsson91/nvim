@@ -190,8 +190,6 @@ nmap <leader>gs :G<CR>
 
 " Remove the use of some keys
 nnoremap B ^
-nnoremap E $
-nnoremap $          <nop>
 nnoremap ^          <nop>
 nnoremap <Left>     <nop>
 nnoremap <Right>    <nop>
