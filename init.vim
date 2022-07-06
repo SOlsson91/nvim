@@ -37,8 +37,6 @@ set exrc
 set secure
 
 set hlsearch
-noremap <C-l> :nohlsearch<CR><C-l>
-noremap! <C-l> <ESC>:nohlsearch<CR><C-l>
 set cmdheight=1
 
 set updatetime=50
