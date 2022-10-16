@@ -65,7 +65,10 @@ Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'mbbill/undotree'
 
 Plug 'OmniSharp/omnisharp-vim'
+
 "Plug 'dense-analysis/ale'
+Plug 'rust-lang/rust.vim'
+
 
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
