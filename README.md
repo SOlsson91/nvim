@@ -1,14 +1,6 @@
-# NVIM
-*Will probobly take the place of my vim repo. To see the vim repo go check*
+# Neovim
 [Github](https://github.com/SOlsson91/vim)
 
-My personal development enviroment. I use it for coding:
+My personal development enviroment.
 
-    C++
-    Python
-    HTML/CSS
-    C#
-
-If you wish to symlinc between git folder and nvim settings to the following:
-
-ln -s ~/Documents/Code/nvim ~/.config
+Can always use `ln -s` to link the directory to the .config folder if cloned elsewhere
