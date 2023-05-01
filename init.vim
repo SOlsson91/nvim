@@ -77,6 +77,8 @@ Plug 'tpope/vim-fugitive'
 Plug 'cdelledonne/vim-cmake'
 Plug 'morhetz/gruvbox'
 
+Plug 'christoomey/vim-tmux-navigator'
+
 Plug 'cespare/vim-toml'
 call plug#end()
 
