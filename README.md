@@ -1,5 +1,4 @@
 # Neovim
-[Github](https://github.com/SOlsson91/vim)
 
 My personal development enviroment.
 
