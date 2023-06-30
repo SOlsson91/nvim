@@ -80,6 +80,8 @@ Plug 'morhetz/gruvbox'
 Plug 'christoomey/vim-tmux-navigator'
 
 Plug 'cespare/vim-toml'
+
+Plug 'sakhnik/nvim-gdb', { 'do': ':!./install.sh' }
 call plug#end()
 
 "set termguicolors " Not working with floatterm for some reason
@@ -149,15 +151,16 @@ nnoremap <C-p> :GFiles<CR>
 let g:fzf_layout = { 'down': '40%' }
 
 inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#pum#visible() ? coc#pum#next(1) :
+      \ CheckBackspace() ? "\<Tab>" :
       \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <expr><S-TAB> coc#pum#visible() ? coc#pum#prev(1) : "\<C-h>"
 
-function! s:check_back_space() abort
+function! CheckBackspace() abort
   let col = col('.') - 1
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
+
 
 set signcolumn=auto
 

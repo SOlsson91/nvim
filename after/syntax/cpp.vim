@@ -35,3 +35,18 @@ au BufWinLeave * call clearmatches()
 
 " Remove all trailing whitespaces
 nnoremap <silent> <leader>cws :let _s=@/ <Bar> :%s/\s\+$//e <Bar> :let @/=_s <Bar> :nohl <Bar> :unlet _s <CR>
+
+" nvim-gdb keymap setup
+function! NvimGdbNoTKeymaps()
+  tnoremap <silent> <buffer> <esc> <c-\><c-n>
+endfunction
+
+let g:nvimgdb_config_override = {
+  \ 'key_next': 'n',
+  \ 'key_step': 's',
+  \ 'key_finish': 'f',
+  \ 'key_continue': 'c',
+  \ 'key_until': 'u',
+  \ 'key_breakpoint': 'b',
+  \ 'set_tkeymaps': "NvimGdbNoTKeymaps",
+  \ }
